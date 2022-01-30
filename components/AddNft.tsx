@@ -5,6 +5,7 @@ import styles from '../styles/AddNft.module.css';
 import Select, { ActionMeta, SingleValue } from 'react-select';
 import Image from 'next/image';
 import About from './About';
+import { server } from '../config';
 
 const AddNft = (props: {tokenDetails: {name: string, price: string}}) => {
 
@@ -277,7 +278,7 @@ const ShowNftList = (props: ShowNftListProps) => {
 const ShowTierImage = (props: {tier: string}) => {
     return (
         <Image
-            src={`/../public/tierImage/${props.tier.toUpperCase()}.png`}
+            src={`${server}/tierImage/${props.tier.toUpperCase()}.png`}
             alt="" 
             width="150"
             height="150" />
