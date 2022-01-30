@@ -1,5 +1,5 @@
 .content_bg {
-  background: url('https://static.wixstatic.com/media/b9221a_753f447dd5be4a70a50df122fa287ff8~mv2.jpeg/v1/fill/w_1060,h_729,al_c,q_85/b9221a_753f447dd5be4a70a50df122fa287ff8~mv2.webp') no-repeat center center fixed;
+  background: url(../public/background.png) no-repeat center center fixed;
   background-size: 100% 100%;
   height: 100vh;
   overflow: auto;
