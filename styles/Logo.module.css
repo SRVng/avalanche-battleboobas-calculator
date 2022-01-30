@@ -1,0 +1,40 @@
+@keyframes zoom {
+    0% {
+        opacity: 0.2;
+        transform: scale(10)
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes transparency {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.container {
+    position:  static;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.battleLogo {
+    position: relative;
+    animation: zoom 0.75s linear;
+}
+
+.calculator {
+    position: relative;
+    animation: transparency 2s linear;
+    margin-left: 15%;
+    margin-top: -30px;
+}

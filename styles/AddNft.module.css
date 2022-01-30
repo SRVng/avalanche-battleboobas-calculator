@@ -1,0 +1,66 @@
+.nftListTable {
+    border: 2px solid black;
+    width: 900px;
+    height: 100px;
+    background-color: #ff00449c;
+
+    font-family: fantasy;
+    color: white;
+    text-shadow: 0 0 80px rgb(192 219 255 / 75%), 0 0 32px rgb(65 120 255 / 24%);
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nftListTable th {
+    font-size: larger;
+    height: 50px;
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.nftListTable td {
+    width: 800px;
+    height: 200px;
+    text-align: center;
+    border-right: 1px solid black;
+}
+
+.modalpage h2 {
+    text-align: center;
+}
+
+.nftselectbox {
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.nftselectbox select {
+    font-family: fantasy;
+    font-size: medium;
+    padding: 20px;
+}
+
+.nftselectbox input {
+    padding: 20px;
+}
+
+.nftselectbox button {
+    padding: 10px 30px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nftselectbox button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px crimson;
+}
+
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 0fr 1fr;
+
+    padding: 45px 45px;
+}
+

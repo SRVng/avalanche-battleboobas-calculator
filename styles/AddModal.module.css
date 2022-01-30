@@ -1,0 +1,39 @@
+.container {
+    text-align: center;
+}
+
+.button {
+    position: relative;
+    text-align: center;
+
+    border-radius: 20px;
+    padding: 10px 40px;
+
+    font-family: fantasy;
+    font-size: large;
+
+    cursor: pointer;
+
+    background-color: palegoldenrod;
+
+    transition: all 0.3s ease;
+}
+
+.button:hover, .closeButton:hover {
+    box-shadow: 0px -2px 20px 0px whitesmoke;
+}
+
+.closeButton {
+    position:  relative;
+    left: 95%;
+
+    border-radius: 20px;
+    padding: 8px 16px;
+
+    font-family: fantasy;
+    font-size: medium;
+
+    cursor: pointer;
+
+    background-color: palegoldenrod;
+}
