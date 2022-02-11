@@ -36,7 +36,7 @@ const About = () => {
                     <a href='https://nftrade.com/' target="_blank" rel="noreferrer"> NFTrade</a>
                 </p>
                 <p>Token price are fetched using MoralisWeb3API.</p>
-                <p>*Inspired by <a href='https:/milky.money' target='_blank' rel='noreferrer'>https:/milky.money</a> by @CryptoTOB</p>
+                <p>*Inspired by <a href='https://milky.money' target='_blank' rel='noreferrer'>https://milky.money</a> by @CryptoTOB</p>
                 <p><b>**I didn&apos;t own/involve in the BattleBoobas project**</b></p>
                 <p className={styles.myEmail}>snakglom@gmail.com</p>
             </div>
