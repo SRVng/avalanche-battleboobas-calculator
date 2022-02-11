@@ -42,7 +42,7 @@ const FetchPrice = (props: fetchPriceProps) => {
         fetchPrice(props.address, Web3API).then((res) => {
             props.updateTokenDetails({
                 name: props.symbol,
-                price: parseInt(res.price) / 1e16
+                price: res.price
             })
         })
         console.log("Price fetched")
@@ -53,15 +53,23 @@ const FetchPrice = (props: fetchPriceProps) => {
 
 const fetchPrice = async (address: string, Web3API: any) => {
 
+    const options = {
+        chain: "avalanche",
+        date: (Date.now() / 1000).toFixed(0)
+    };
+
+    const block = await Web3API.native.getDateToBlock(options).block;
+
     const req = await Web3API.token.getTokenPrice({
         address: address,
         chain: "avalanche",
         exchange: "TraderJoe",
+        to_block: block
     }); 
 
     return JSON.parse(
             JSON.stringify({
-                price: req.nativePrice?.value
+                price: req.usdPrice!
             })
         );
 }
