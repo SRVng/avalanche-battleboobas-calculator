@@ -52,9 +52,10 @@
     transition: all 0.3s ease;
 }
 
-.nftselectbox button:hover {
+.nftselectbox button:hover,
+.nftListWithRemove button:hover {
     cursor: pointer;
-    box-shadow: 0px 0px 10px 0px crimson;
+    box-shadow: 0px 0px 5px 1px crimson;
 }
 
 .menu {
@@ -64,3 +65,23 @@
     padding: 45px 45px;
 }
 
+.nftListWithRemove {
+    text-align: center;
+
+    font-family: fantasy;
+    font-size: medium;
+}
+
+.nftListWithRemove li {
+    list-style-type: none;
+}
+
+.nftListWithRemove p {
+    display: inline;
+    color: brown;
+}
+
+.nftListWithRemove button {
+    border-radius: 20px;
+    cursor: pointer
+}

@@ -153,6 +153,7 @@ const NFTCalculate = (props: NFTCalculateProps) => {
 
     const modalCss = {
         content: {
+          postion: "fixed",
           top: '100px',
           left: '200px',
           right: '200px',
@@ -235,9 +236,9 @@ const ShowNftList = (props: ShowNftListProps) => {
                 nftList.map(({id, tier, size, prestige}) => (
                     id >= 1 ?
                     <div key={id}>
-                        <div key={'nftList_' + id}>
+                        <div className={styles.nftListWithRemove} key={'nftList_' + id}>
                             <li key={id}>
-                                Id: {id}, {tier} ninja with {size} boobas and {prestige} prestige
+                                Id: {id}, <p>{tier}</p> ninja with <p>{size}</p> boobas and <p>{prestige}</p> prestige
                                 &nbsp; <button key={'button_' + id}    onClick={() => {handleRemoveButton(id)}}>Remove</button> 
                             </li>
                         </div>
