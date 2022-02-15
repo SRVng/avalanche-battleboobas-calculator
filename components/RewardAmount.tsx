@@ -63,7 +63,7 @@ const RewardAmount = (props: RewardAmountProps) => {
           <ShowReward header='Monthly' horizon='M' reward={reward} tokenPrice={props.tokenDetails.price} />
           </tbody>
         </table> 
-        <p>Today ${props.tokenDetails.name} Price: ${parseFloat(props.tokenDetails.price).toFixed(6)}</p>
+        <p>Today ${props.tokenDetails.name} Price: ${parseFloat(props.tokenDetails.price).toFixed(16)}</p>
       </div>
     </div>
   );
