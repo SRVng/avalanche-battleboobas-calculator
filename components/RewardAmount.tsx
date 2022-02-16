@@ -1,7 +1,7 @@
 import React from 'react';
 import { server } from '../config';
 import styles from '../styles/RewardAmount.module.css';
-import init from '../wasm/pkg/wasm'; 
+import init from '../wasm/pkg/wasm.js'; 
 
 interface RewardAmountProps {
   nftList: {
