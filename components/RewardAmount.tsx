@@ -1,6 +1,7 @@
 import React from 'react';
 import { server } from '../config';
 import styles from '../styles/RewardAmount.module.css';
+import init from '../wasm/pkg/wasm'; 
 
 interface RewardAmountProps {
   nftList: {
@@ -121,8 +122,8 @@ const calculateReward = async (
     prestigeMultiplier: number
   }
 ) => {
-  const result = reward.milk * reward.sizeMultiplier * reward.prestigeMultiplier
-  return result;
+  const wasmInit = await init();
+  return wasmInit.calculate_reward(reward.milk, reward.sizeMultiplier, reward.prestigeMultiplier);
 }
 
 const timeHorizonReward = (
